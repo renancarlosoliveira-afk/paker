@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Paraná - Produção de Alimentos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Agro Paraná</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="sobre">
+        <h2>Sobre a Produção de Alimentos no Paraná</h2>
+        <p>O Paraná é um dos maiores produtores de alimentos do Brasil, destacando-se em grãos, carnes e leite.</p>
+    </section>
+
+    <section id="produtos">
+        <h2>Produtos Principais</h2>
+        <div class="produtos-container">
+            <div class="produto" onclick="mostrarInfo('Soja')">
+                <h3>Soja</h3>
+                <p>Produção anual significativa, exportada para o mundo inteiro.</p>
+            </div>
+            <div class="produto" onclick="mostrarInfo('Milho')">
+                <h3>Milho</h3>
+                <p>Base da alimentação animal e matéria-prima de diversos produtos.</p>
+            </div>
+            <div class="produto" onclick="mostrarInfo('Carne Suína')">
+                <h3>Carne Suína</h3>
+                <p>O Paraná é líder nacional na produção de suínos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="formContato">
+            <input type="text" id="nome" placeholder="Seu nome" required>
+            <input type="email" id="email" placeholder="Seu email" required>
+            <textarea id="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Agro Paraná. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
